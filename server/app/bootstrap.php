@@ -88,6 +88,14 @@ function migrate(PDO $pdo): void
         INDEX idx_k (k),
         INDEX idx_ts (ts)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+    // Kolom tambahan (dashboard): tanggapan untuk pelapor dan waktu pembaruan terakhir
+    $have = $pdo->query("SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'reports'")->fetchAll(PDO::FETCH_COLUMN);
+    if (!in_array('public_note', $have, true)) {
+        $pdo->exec('ALTER TABLE reports ADD COLUMN public_note TEXT NULL AFTER admin_note');
+    }
+    if (!in_array('updated_at', $have, true)) {
+        $pdo->exec('ALTER TABLE reports ADD COLUMN updated_at DATETIME NULL AFTER created_at');
+    }
 }
 
 // Pembatas umum berbasis hash (IP tidak disimpan, hanya hash harian yang tidak bisa dibalik).

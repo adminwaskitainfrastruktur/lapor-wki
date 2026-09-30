@@ -17,7 +17,45 @@ if ($action === 'flows' && $_SERVER['REQUEST_METHOD'] === 'GET') {
             'maxSizeMb' => (int)$upload['max_size_mb'],
             'extensions' => $upload['extensions'],
         ],
+        // ID aplikasi Microsoft untuk login admin (bukan rahasia; dipakai MSAL di browser)
+        'auth' => [
+            'clientId'  => (string)(cfg('auth', [])['client_id'] ?? ''),
+            'authority' => 'https://login.microsoftonline.com/' . (string)(cfg('auth', [])['tenant_id'] ?? 'organizations'),
+        ],
     ]);
+}
+
+// --- Lacak laporan: pelapor cek status dengan kode laporan ---
+if ($action === 'track' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    $ref = strtoupper(trim((string)(json_decode((string)file_get_contents('php://input'), true)['ref'] ?? '')));
+    if (!preg_match('/^[A-Z]{2,5}-[A-Z0-9]{8}$/', $ref)) {
+        json_out(['ok' => false, 'error' => 'Format kode laporan tidak valid. Contoh: WBS-AB12CD34.'], 422);
+    }
+    try {
+        // batasi tebakan kode: 30 kali per 15 menit per perangkat
+        if (throttle('track', 30, 900)) {
+            json_out(['ok' => false, 'error' => 'Terlalu banyak pencarian. Coba lagi dalam 15 menit.'], 429);
+        }
+        $st = db()->prepare('SELECT ref, type, status, public_note, created_at, updated_at FROM reports WHERE ref = ?');
+        $st->execute([$ref]);
+        $r = $st->fetch();
+    } catch (Throwable $e) {
+        error_log('track: ' . $e->getMessage());
+        json_out(['ok' => false, 'error' => 'Layanan sedang bermasalah. Coba lagi nanti.'], 500);
+    }
+    if (!$r) {
+        json_out(['ok' => false, 'error' => 'Kode laporan tidak ditemukan. Periksa kembali penulisannya.'], 404);
+    }
+    // Hanya data yang aman untuk pelapor: tanpa isi laporan, catatan internal, atau lampiran.
+    json_out(['ok' => true, 'report' => [
+        'ref' => $r['ref'],
+        'type' => $r['type'],
+        'typeTitle' => $flows[$r['type']]['title'] ?? $r['type'],
+        'status' => $r['status'],
+        'publicNote' => (string)$r['public_note'],
+        'createdAt' => $r['created_at'],
+        'updatedAt' => $r['updated_at'],
+    ]]);
 }
 
 if ($action !== 'submit' || $_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -187,7 +225,7 @@ try {
     }
     $html = '<div style="font-family:Segoe UI,Arial,sans-serif;font-size:14px;color:#1b2540">'
         . '<h2 style="margin:0 0 4px">' . h($flow['title']) . '</h2>'
-        . '<p style="margin:0 0 12px;color:#55607a">Laporan baru masuk. Kode referensi: <b>' . h($ref) . '</b> &middot; ' . h(date('d M Y H:i', strtotime($now))) . ' WIB</p>'
+        . '<p style="margin:0 0 12px;color:#55607a">Laporan baru masuk. Kode laporan: <b>' . h($ref) . '</b> &middot; ' . h(date('d M Y H:i', strtotime($now))) . ' WIB</p>'
         . '<table style="border-collapse:collapse;width:100%;max-width:720px">' . $rows . '</table>'
         . '<p style="margin:12px 0 0">' . $fileNote . '</p>'
         . '<p style="margin:16px 0 0;color:#8a94a8;font-size:12px">Email otomatis dari Layanan Pelaporan WKI. Jangan diteruskan ke pihak yang tidak berwenang.</p></div>';

@@ -31,7 +31,7 @@ Kontras teks normal minimal 4.5:1; status tidak hanya dengan warna (selalu ada i
 
 ## Tipografi
 - Judul: Lexend (500–700). Isi: Source Sans 3 (400–600).
-- Skala: 14 / 16 / 18 / 22 / 28. Isi minimal 16px, line-height 1.6. Angka referensi memakai tabular-nums.
+- Skala: 14 / 16 / 18 / 22 / 28. Isi minimal 16px, line-height 1.6. Kode laporan dan angka memakai tabular-nums.
 
 ## Spasi & bentuk
 - Skala 4/8: 4, 8, 12, 16, 24, 32, 48. Radius 12 (input/tombol) dan 16 (kartu, gelembung chat).
@@ -45,7 +45,7 @@ Kontras teks normal minimal 4.5:1; status tidak hanya dengan warna (selalu ada i
 - Gelembung bot (kiri) dan pengguna (kanan), `role="log"` + `aria-live="polite"` pada daftar pesan.
 - Bilah input adaptif per jenis: teks, email, telepon, tanggal, teks panjang, unggah file. Selalu ada tombol "Lewati" untuk pertanyaan opsional.
 - Progres "Pertanyaan n dari N" + bagian (A–D untuk gratifikasi).
-- Ringkasan sebelum kirim (dapat diedit per jawaban), lalu layar sukses dengan kode referensi.
+- Ringkasan sebelum kirim (dapat diedit per jawaban), lalu layar sukses dengan kode laporan.
 - Ikon: Phosphor (`@phosphor-icons/react`), gaya konsisten, tanpa emoji.
 
 ## Aksesibilitas

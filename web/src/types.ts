@@ -25,9 +25,25 @@ export interface UploadRules {
   extensions: string[];
 }
 
+export interface AuthConfig {
+  clientId: string;
+  authority: string;
+}
+
 export interface FlowsResponse {
   flows: Record<string, Flow>;
   upload: UploadRules;
+  auth: AuthConfig;
+}
+
+export interface TrackedReport {
+  ref: string;
+  type: string;
+  typeTitle: string;
+  status: string;
+  publicNote: string;
+  createdAt: string;
+  updatedAt: string | null;
 }
 
 export type Answers = Record<string, string>;
@@ -36,7 +52,8 @@ export interface ChatMessage {
   id: number;
   role: 'bot' | 'user';
   text: string;
-  kind?: 'section' | 'summary' | 'done' | 'error';
+  /** 'q' = pertanyaan aktif dari bot (dipakai tema B untuk teks besar) */
+  kind?: 'section' | 'summary' | 'done' | 'error' | 'q';
 }
 
 export type Phase = 'loading' | 'choose' | 'asking' | 'files' | 'review' | 'sending' | 'done';

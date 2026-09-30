@@ -1,9 +1,32 @@
-import type { Answers, FlowsResponse } from './types';
+import type { Answers, FlowsResponse, TrackedReport } from './types';
 
-export async function fetchFlows(): Promise<FlowsResponse> {
-  const res = await fetch('api.php?action=flows', { headers: { Accept: 'application/json' } });
-  if (!res.ok) throw new Error('Gagal memuat layanan (' + res.status + ')');
-  return (await res.json()) as FlowsResponse;
+let flowsPromise: Promise<FlowsResponse> | null = null;
+
+/** Definisi percakapan + konfigurasi publik. Dimuat sekali lalu dipakai bersama oleh semua halaman. */
+export function fetchFlows(): Promise<FlowsResponse> {
+  flowsPromise ??= fetch('api.php?action=flows', { headers: { Accept: 'application/json' } }).then(async (res) => {
+    if (!res.ok) throw new Error('Gagal memuat layanan (' + res.status + ')');
+    return (await res.json()) as FlowsResponse;
+  });
+  flowsPromise.catch(() => {
+    flowsPromise = null;
+  });
+  return flowsPromise;
+}
+
+export async function trackReport(ref: string): Promise<{ ok: boolean; report?: TrackedReport; error?: string }> {
+  try {
+    const res = await fetch('api.php?action=track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref }),
+    });
+    const data = await res.json().catch(() => null);
+    if (data && typeof data.ok === 'boolean') return data;
+    return { ok: false, error: 'Server tidak merespons dengan benar (' + res.status + ').' };
+  } catch {
+    return { ok: false, error: 'Koneksi terputus. Periksa internet Anda lalu coba lagi.' };
+  }
 }
 
 export interface SubmitResult {

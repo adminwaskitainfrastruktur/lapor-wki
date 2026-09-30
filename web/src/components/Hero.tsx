@@ -1,4 +1,5 @@
-import { EyeSlash, LockKey, Paperclip, ShieldCheck, UserCircleMinus } from '@phosphor-icons/react';
+import { EyeSlash, LockKey, Paperclip, UserCircleMinus } from '@phosphor-icons/react';
+import { Logo } from './Logo';
 
 const MAIN_SITE = 'https://waskitainfrastruktur.co.id';
 
@@ -9,15 +10,13 @@ const POINTS = [
   { icon: LockKey, title: 'Langsung ke tim berwenang', text: 'Laporan hanya diterima oleh pihak yang menanganinya.' },
 ];
 
-/** Panel identitas untuk layar lebar. Disembunyikan di ponsel (brand tampil di header chat). */
+/** Panel identitas (tema A, layar lebar). Disembunyikan di tema B/C dan di ponsel lewat CSS. */
 export function Hero() {
   return (
     <aside className="hero" aria-label="Tentang layanan">
       <div className="hero__inner">
         <div className="hero__brand">
-          <span className="hero__mark" aria-hidden="true">
-            <ShieldCheck size={30} weight="fill" />
-          </span>
+          <Logo size={42} inverse />
           <span className="hero__org">PT Waskita Karya Infrastruktur</span>
         </div>
         <h2 className="hero__title">Suara Anda penting. Laporkan dengan aman.</h2>
@@ -38,7 +37,7 @@ export function Hero() {
           ))}
         </ul>
         <a className="hero__link" href={MAIN_SITE}>
-          &larr; Kembali ke waskitainfrastruktur.co.id
+          ← Kembali ke waskitainfrastruktur.co.id
         </a>
       </div>
     </aside>

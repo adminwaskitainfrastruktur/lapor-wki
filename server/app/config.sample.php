@@ -55,9 +55,13 @@ return [
     // Batas kiriman per pengirim (dihitung dari hash, IP tidak disimpan)
     'rate_limit' => ['max' => 5, 'window_minutes' => 60],
 
-    // Akun admin untuk melihat laporan di /admin.php
-    // Kosongkan dulu, buka /admin.php?setup untuk membuat hash password, lalu tempel di sini.
-    'admin_users' => [
-        // 'admin' => '$2y$10$....hash....',
+    // Dashboard admin (#/admin) hanya lewat login Microsoft 365 (MSAL).
+    // Pakai app registration Entra ID tipe SPA; tambahkan redirect URI https://DOMAIN-ANDA (platform "Single-page application").
+    'auth' => [
+        'tenant_id' => '',   // Directory (tenant) ID
+        'client_id' => '',   // Application (client) ID
+        'admins'    => [     // userPrincipalName yang boleh masuk admin; akun lain di tenant tetap ditolak
+            // 'nama@contoh-domain.co.id',
+        ],
     ],
 ];

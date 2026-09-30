@@ -6,7 +6,8 @@ Web pelaporan mandiri untuk PT Waskita Karya Infrastruktur. Berjalan di **subdom
 - Pelapor mengisi lewat percakapan (satu pertanyaan per giliran), tanpa login, boleh anonim.
 - Boleh unggah lampiran (file asli, hingga 5 file × 10 MB).
 - Laporan tersimpan di database MySQL Hostinger, lalu email notifikasi (dengan lampiran) dikirim ke penerima per jenis.
-- Halaman admin `/admin.php` untuk melihat laporan, mengunduh lampiran, mengubah status, dan ekspor CSV.
+- Menu navigasi (sidebar di layar lebar, bilah atas di ponsel): **Buat laporan** (chatbot, halaman utama), **Lacak laporan** (dashboard pelapor: status lewat kode laporan + daftar laporan dari perangkat ini), dan **Admin**.
+- Dashboard admin `#/admin`: statistik, grafik 14 hari, daftar + filter + pencarian, detail, unduh lampiran, ubah status, tanggapan untuk pelapor, catatan internal, ekspor CSV. Login Microsoft 365 (MSAL); hanya email di `auth.admins` yang bisa masuk.
 
 | Jenis | Kode | Penerima email (bisa diubah di `app/config.php`) |
 |---|---|---|
@@ -19,7 +20,7 @@ Tautan langsung: `/?jenis=wbs` dan `/?jenis=gratifikasi` (melewati pilihan jenis
 
 ```
 web/      Frontend React + TypeScript (Vite). Tampilan chat.
-server/   Backend PHP (api.php, admin.php, app/*) untuk hosting Hostinger.
+server/   Backend PHP (api.php publik, admin-api.php dashboard admin, app/*) untuk hosting Hostinger. admin.php lama hanya mengalihkan ke #/admin.
 scripts/  assemble.mjs (menyusun deploy/), smtp_sink.py (uji email lokal)
 design-system/lapor-wki/MASTER.md   Aturan desain (ui-ux-pro-max)
 deploy/   Hasil susunan siap upload (dibuat oleh scripts/assemble.mjs, tidak di-commit)
@@ -58,10 +59,10 @@ Uji email tanpa server email asli: `python scripts/smtp_sink.py 2525 tmp-mail` l
    isi `storage_dir` di config dengan path lengkapnya.
 5. **Config**: salin `app/config.sample.php` menjadi `app/config.php`, isi database, `app_secret` (teks acak panjang),
    penerima email, dan bagian `mail` (lihat di bawah).
-6. **Admin**: buka `/admin.php?setup`, buat hash password (min. 10 karakter), tempel ke `admin_users` di config.
+6. **Admin (login Microsoft 365 / MSAL)**: pakai app registration Entra ID tipe *Single-page application* (boleh yang sama dengan aplikasi IT Asset). Tambahkan redirect URI `https://DOMAIN-ANDA/` pada platform SPA. Isi `auth` di config: `tenant_id`, `client_id`, dan `admins` (daftar userPrincipalName yang boleh masuk). Tidak perlu client secret.
    Setelah ada akun, halaman setup otomatis mati.
 7. **Cek keamanan**: pastikan `https://lapor.../app/config.php` dan `https://lapor.../storage/` menghasilkan 403/404.
-8. **Uji**: kirim satu laporan uji per jenis; cek email masuk, lampiran ikut, dan tampil di `/admin.php`.
+8. **Uji**: kirim satu laporan uji per jenis; cek email masuk, lampiran ikut, tampil di `#/admin`, dan status bisa dicek di `#/lacak`.
 
 ### Email
 
@@ -81,5 +82,6 @@ Di web baru, tombol "Kembali ke website" mengarah ke domain utama.
 - Tidak ada login, tidak ada cookie pelacak. IP tidak disimpan; pembatas kiriman memakai hash harian yang tidak bisa dibalik.
 - Semua jawaban opsional. Lampiran dibatasi jenis dan ukuran, disimpan dengan nama acak, hanya bisa diunduh admin.
 - Anti-spam: pembatas kiriman per pengirim, kolom jebakan (honeypot), pemeriksaan asal permintaan.
-- Admin: password di-hash, sesi httpOnly + SameSite, CSRF pada ubah status, login dibatasi 10 percobaan / 15 menit.
+- Admin: browser login Microsoft (MSAL, popup; otomatis beralih ke redirect bila popup diblokir) lalu mengirim access token Graph sekali ke `admin-api.php`. Server memanggil Graph `/me`, memeriksa tenant (`tid`) dan `userPrincipalName` terhadap `auth.admins`; akun lain di tenant yang sama tetap ditolak. Daftar admin dibaca ulang tiap permintaan (menghapus email langsung mencabut akses). Sesi httpOnly + SameSite=Strict, habis 8 jam tanpa aktivitas, CSRF pada perubahan, login dibatasi 10 percobaan / 15 menit.
+- Lacak laporan hanya menampilkan jenis, status, waktu, dan tanggapan untuk pelapor; isi laporan, catatan internal, dan lampiran tidak pernah dikirim. Pencarian kode dibatasi 30 kali / 15 menit.
 - Lampiran **tidak dipindai antivirus**. Unduh dan buka dengan hati-hati.

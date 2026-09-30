@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
-import { CheckCircle, PencilSimple, Paperclip, ShieldCheck, Warning } from '@phosphor-icons/react';
+import { CheckCircle, PencilSimple, Paperclip, Warning } from '@phosphor-icons/react';
 import type { Answers, ChatMessage, Flow } from '../types';
 import { formatBytes, formatDateId } from '../validate';
+import { Logo } from './Logo';
+import { href } from '../router';
 
 interface ListProps {
   messages: ChatMessage[];
@@ -11,7 +13,6 @@ interface ListProps {
 
 export function MessageList({ messages, typing, children }: ListProps) {
   const endRef = useRef<HTMLDivElement>(null);
-  // Selalu gulir area percakapan ke bagian paling bawah (tanpa animasi gulir agar tidak terpotong)
   const hasChildren = Boolean(children);
   useEffect(() => {
     const stage = endRef.current?.closest('.stage');
@@ -22,10 +23,16 @@ export function MessageList({ messages, typing, children }: ListProps) {
     return () => cancelAnimationFrame(id);
   }, [messages.length, typing, hasChildren]);
 
+  const last = messages.length - 1;
   return (
     <div className="log" role="log" aria-live="polite" aria-relevant="additions" aria-label="Percakapan">
       {messages.map((m, i) => (
-        <Bubble key={m.id} message={m} showAvatar={m.role === 'bot' && (i === 0 || messages[i - 1].role !== 'bot' || messages[i - 1].kind === 'section')} />
+        <Bubble
+          key={m.id}
+          message={m}
+          active={i === last && !typing && m.kind === 'q'}
+          showAvatar={m.role === 'bot' && (i === 0 || messages[i - 1].role !== 'bot' || messages[i - 1].kind === 'section')}
+        />
       ))}
       {typing && (
         <div className="row row--bot" aria-hidden="true">
@@ -43,7 +50,7 @@ export function MessageList({ messages, typing, children }: ListProps) {
   );
 }
 
-function Bubble({ message, showAvatar }: { message: ChatMessage; showAvatar: boolean }) {
+function Bubble({ message, showAvatar, active }: { message: ChatMessage; showAvatar: boolean; active: boolean }) {
   if (message.kind === 'section') {
     return (
       <div className="section-chip" role="separator" aria-label={message.text}>
@@ -54,11 +61,11 @@ function Bubble({ message, showAvatar }: { message: ChatMessage; showAvatar: boo
   const cls = ['bubble', message.role === 'user' ? 'bubble--user' : 'bubble--bot'];
   if (message.kind === 'error') cls.push('bubble--error');
   return (
-    <div className={`row row--${message.role}`}>
+    <div className={`row row--${message.role}`} data-active={active || undefined}>
       {message.role === 'bot' &&
         (showAvatar ? (
           <span className="avatar" aria-hidden="true">
-            <ShieldCheck size={18} weight="fill" />
+            <Logo size={30} inverse />
           </span>
         ) : (
           <span className="avatar avatar--ghost" />
@@ -130,12 +137,19 @@ export function DoneCard({ refCode, outro }: { refCode: string; outro: string })
       <CheckCircle size={40} weight="fill" className="done__icon" aria-hidden="true" />
       <h2 className="done__title">Laporan terkirim</h2>
       <p>{outro}</p>
-      <p className="done__ref-label">Kode referensi Anda</p>
+      <p className="done__ref-label">Kode laporan Anda</p>
       <p className="done__ref">{refCode}</p>
-      <button type="button" className="btn btn--ghost" onClick={copy}>
-        Salin kode
-      </button>
-      <p className="muted small">Simpan kode ini bila Anda ingin menanyakan tindak lanjut. Kami tidak mencatat alamat IP atau identitas Anda.</p>
+      <div className="done__actions">
+        <button type="button" className="btn btn--ghost" onClick={copy}>
+          Salin kode
+        </button>
+        <a className="btn btn--outline" href={href('lacak', { ref: refCode })}>
+          Lacak status laporan
+        </a>
+      </div>
+      <p className="muted small">
+        Simpan kode ini untuk memantau tindak lanjut di menu Lacak laporan. Kode juga tersimpan di browser ini. Kami tidak mencatat alamat IP atau identitas Anda.
+      </p>
     </section>
   );
 }

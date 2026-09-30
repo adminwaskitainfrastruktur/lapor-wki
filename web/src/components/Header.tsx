@@ -1,4 +1,5 @@
-import { ArrowLeft, LockKey, ShieldCheck } from '@phosphor-icons/react';
+import { LockKey } from '@phosphor-icons/react';
+import { Logo } from './Logo';
 
 const MAIN_SITE = 'https://waskitainfrastruktur.co.id';
 
@@ -13,22 +14,20 @@ export function Header({ flowTitle, progress }: Props) {
     <header className="app-header">
       <div className="app-header__row">
         <a className="back-link" href={MAIN_SITE}>
-          <ArrowLeft size={20} aria-hidden="true" />
+          <span aria-hidden="true">←</span>
           <span>Kembali ke website</span>
         </a>
+        <div className="brand">
+          <Logo size={40} />
+          <div>
+            <h1 className="brand__title">Layanan Pelaporan</h1>
+            <p className="brand__sub">PT Waskita Karya Infrastruktur{flowTitle ? ` · ${flowTitle}` : ''}</p>
+          </div>
+        </div>
         <span className="privacy-pill">
           <LockKey size={16} weight="fill" aria-hidden="true" />
-          Rahasia &middot; tanpa login
+          Rahasia · tanpa login
         </span>
-      </div>
-      <div className="brand">
-        <span className="brand__mark" aria-hidden="true">
-          <ShieldCheck size={28} weight="fill" />
-        </span>
-        <div>
-          <h1 className="brand__title">Layanan Pelaporan</h1>
-          <p className="brand__sub">PT Waskita Karya Infrastruktur{flowTitle ? ` · ${flowTitle}` : ''}</p>
-        </div>
       </div>
       {progress && (
         <div className="progress" aria-label={`Kemajuan pengisian: pertanyaan ${progress.current} dari ${progress.total}`}>

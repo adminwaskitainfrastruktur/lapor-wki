@@ -1,0 +1,865 @@
+/* Kerangka aplikasi (navigasi) serta halaman Lacak laporan dan Dashboard admin.
+   Memakai token tema dari styles.css (tema C, palet tema B). */
+
+/* =====================  Kerangka: navigasi + halaman  ===================== */
+.frame {
+  --nav-h: 56px;
+  --page-h: calc(100dvh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+.frame__main {
+  flex: 1;
+  min-width: 0;
+}
+.frame__chat[hidden] {
+  display: none;
+}
+.frame .layout {
+  width: 100%;
+}
+
+/* Navigasi (ponsel: bilah atas) */
+.sidenav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: var(--nav-h);
+  padding: 0 12px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+.sidenav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.sidenav__brand > span:last-child,
+.sidenav__label,
+.sidenav__back {
+  display: none;
+}
+.sidenav__title {
+  display: block;
+  font: 600 17px/1.2 var(--font-head);
+  color: var(--head-ink);
+}
+.sidenav__sub {
+  display: block;
+  font-size: 12px;
+  color: var(--mute);
+}
+.sidenav__list {
+  display: flex;
+  gap: 4px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.sidenav__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 6px 10px;
+  border-radius: var(--r);
+  color: var(--mute);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--dur-out) ease,
+    color var(--dur-out) ease;
+}
+.sidenav__link:hover {
+  background: var(--chip);
+  color: var(--ink);
+}
+.sidenav__link[aria-current='page'] {
+  background: var(--chip);
+  color: var(--pri);
+}
+
+@media (min-width: 960px) {
+  .frame {
+    --page-h: 100dvh;
+    flex-direction: row;
+    height: 100dvh;
+    min-height: 0;
+  }
+  .frame__main {
+    height: 100dvh;
+    overflow-y: auto;
+  }
+  .sidenav {
+    flex: 0 0 232px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    height: 100dvh;
+    padding: 20px 14px;
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+  }
+  .sidenav__brand {
+    padding: 0 6px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .sidenav__brand > span:last-child,
+  .sidenav__label {
+    display: block;
+  }
+  .sidenav__short {
+    display: none;
+  }
+  .sidenav__list {
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+  }
+  .sidenav__item--admin {
+    margin-top: auto;
+  }
+  .sidenav__link {
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+  .sidenav__link[aria-current='page'] {
+    background: var(--pri);
+    color: #fff;
+  }
+  .sidenav__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 6px 0;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  /* Sidebar sudah memuat tautan kembali; sembunyikan di header chat */
+  .frame .app-header .back-link {
+    display: none;
+  }
+}
+
+/* =====================  Halaman (lacak & admin)  ===================== */
+.page {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+.page--wide {
+  max-width: 1180px;
+}
+.page__head {
+  margin-bottom: 20px;
+}
+.page__head--row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.page__eyebrow {
+  margin: 0 0 4px;
+  font: 500 12px 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.page__title {
+  margin: 0;
+  font: 500 clamp(28px, 4vw, 36px) / 1.15 var(--font-head);
+  color: var(--head-ink);
+}
+.page__lead {
+  margin: 8px 0 0;
+  max-width: 60ch;
+  color: var(--mute);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+.panel__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font: 600 18px/1.3 var(--font-head);
+  color: var(--head-ink);
+}
+.field-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: -6px;
+}
+.input--mono {
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.input--sm {
+  min-height: 40px;
+  padding: 6px 10px;
+  font-size: 15px;
+}
+select.input {
+  cursor: pointer;
+}
+.track-form__row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.track-form__row .input {
+  flex: 1 1 220px;
+}
+.result__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+.result__ref {
+  margin: 0;
+  font: 500 22px/1.2 'IBM Plex Mono', monospace;
+  color: var(--head-ink);
+  letter-spacing: 0.02em;
+}
+.result__head .muted {
+  margin: 4px 0 0;
+}
+.badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--chip);
+  color: var(--ink);
+}
+.badge--baru {
+  background: #fdebd6;
+  color: #8a4309;
+}
+.badge--ditinjau {
+  background: #dde5f7;
+  color: var(--pri-strong);
+}
+.badge--selesai {
+  background: #dcefdf;
+  color: #166534;
+}
+.badge--warn {
+  background: #fbe2e2;
+  color: var(--bad);
+}
+
+/* Linimasa status */
+.steps {
+  list-style: none;
+  margin: 4px 0;
+  padding: 0;
+}
+.steps__item {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 0 0 16px;
+  color: var(--mute);
+}
+.steps__item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 24px;
+  bottom: 2px;
+  width: 2px;
+  background: var(--line);
+}
+.steps__item--done:not(:last-child)::before {
+  background: var(--pri);
+}
+.steps__item--done,
+.steps__item--now {
+  color: var(--pri);
+}
+.steps__item svg {
+  flex: none;
+}
+.steps__title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+.steps__item--todo .steps__title {
+  color: var(--mute);
+  font-weight: 500;
+}
+.steps__item .muted {
+  margin: 2px 0 0;
+}
+.note {
+  padding: 14px 16px;
+  border-radius: var(--r);
+  background: var(--chip);
+  border-left: 3px solid var(--accent);
+}
+.note__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+.note__body {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Laporan dari perangkat ini */
+.mine {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mine__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--line);
+}
+.mine__item:first-child {
+  border-top: 0;
+}
+.mine__open {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 56px;
+  padding: 8px 4px;
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+.mine__open:hover .mine__ref {
+  text-decoration: underline;
+}
+.mine__ref {
+  font: 500 16px 'IBM Plex Mono', monospace;
+  color: var(--pri);
+}
+.done__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.done__actions .btn {
+  text-decoration: none;
+}
+
+/* Login admin */
+.login {
+  align-items: flex-start;
+}
+.login__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--chip);
+  color: var(--pri);
+}
+.alert {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: var(--r);
+  background: #fbe9e1;
+  color: #7c2d12;
+  border: 1px solid #f2c7b3;
+}
+.alert svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--accent);
+}
+.saved {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: #166534;
+  font-weight: 600;
+}
+
+/* Admin: pengguna */
+.admin-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-user__avatar {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--pri);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+.admin-user__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+/* Admin: statistik */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+@media (min-width: 760px) {
+  .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 16px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  text-align: left;
+  color: inherit;
+  font: inherit;
+}
+.stat--btn {
+  cursor: pointer;
+  border-top: 3px solid var(--line);
+  transition: background var(--dur-out) ease;
+}
+.stat--btn:hover {
+  background: var(--panel);
+}
+.stat--btn[aria-pressed='true'] {
+  outline: 2px solid var(--pri);
+  outline-offset: -2px;
+}
+.stat--baru {
+  border-top-color: var(--accent);
+}
+.stat--ditinjau {
+  border-top-color: var(--pri);
+}
+.stat--selesai {
+  border-top-color: #16a34a;
+}
+.stat__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mute);
+}
+.stat__value {
+  font: 500 34px/1.1 var(--font-head);
+  color: var(--head-ink);
+}
+.stat__meta {
+  font-size: 12px;
+  color: var(--mute);
+}
+.dash-grid {
+  display: grid;
+  gap: 0 16px;
+}
+@media (min-width: 900px) {
+  .dash-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.dash-grid .panel .btn {
+  align-self: flex-start;
+  text-decoration: none;
+}
+.bars {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  align-items: end;
+  gap: 6px;
+  height: 140px;
+}
+.bars__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 4px;
+}
+.bars__bar {
+  width: 100%;
+  min-height: 2px;
+  border-radius: 4px 4px 0 0;
+  background: var(--pri);
+  opacity: 0.85;
+}
+.bars__n {
+  font-size: 11px;
+  color: var(--mute);
+}
+.bars__d {
+  font: 500 11px 'IBM Plex Mono', monospace;
+  color: var(--mute);
+}
+
+/* Admin: daftar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.toolbar .panel__title {
+  margin-right: auto;
+}
+.toolbar__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1 1 240px;
+  max-width: 340px;
+}
+.toolbar__search svg {
+  position: absolute;
+  left: 10px;
+  color: var(--mute);
+}
+.toolbar__search .input {
+  width: 100%;
+  padding-left: 34px;
+}
+.toolbar select.input {
+  width: auto;
+}
+.reports {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reports li + li {
+  border-top: 1px solid var(--line);
+}
+.report-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 12px 8px;
+  margin: 0 -8px;
+  border-radius: var(--r);
+  color: inherit;
+  text-decoration: none;
+}
+.report-row:hover {
+  background: var(--panel);
+  color: inherit;
+}
+.report-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1 1 320px;
+}
+.report-row__ref {
+  font: 500 15px 'IBM Plex Mono', monospace;
+  color: var(--pri);
+}
+.report-row__snippet {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.report-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+}
+.report-row__meta .small {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Admin: detail */
+.detail {
+  display: grid;
+  gap: 0 16px;
+  margin-top: 12px;
+}
+@media (min-width: 1000px) {
+  .detail {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    align-items: start;
+  }
+}
+.answers {
+  margin: 0;
+}
+.answers__item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.answers__item dt {
+  font-size: 13px;
+  color: var(--mute);
+}
+.answers__item dd {
+  margin: 2px 0 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.files {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.files__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  text-decoration: none;
+}
+.files__name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Logo sudah ada di navigasi; jangan diulang di header chat */
+.frame .app-header .brand .logo {
+  display: none;
+}
+
+/* Popup kode laporan (setelah laporan terkirim) */
+.code-dialog {
+  width: min(460px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 24px 60px rgba(27, 34, 51, 0.28);
+  overflow: auto;
+}
+.code-dialog::backdrop {
+  background: rgba(27, 34, 51, 0.55);
+}
+.code-dialog[open] {
+  animation: rise var(--dur-in) ease-out both;
+}
+.code-dialog__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 24px 24px;
+  text-align: center;
+}
+.code-dialog__ok {
+  color: #16a34a;
+}
+.code-dialog__title {
+  margin: 0;
+  font: 500 26px/1.2 var(--font-head);
+  color: var(--head-ink);
+}
+.code-dialog__label {
+  margin: 4px 0 -4px;
+  font-size: 14px;
+  color: var(--mute);
+}
+.code-dialog__code {
+  margin: 0;
+  padding: 12px 20px;
+  border-radius: var(--r);
+  border: 2px dashed var(--accent);
+  background: var(--panel);
+  font: 500 clamp(22px, 7vw, 30px) / 1.2 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  color: var(--head-ink);
+  user-select: all;
+  overflow-wrap: anywhere;
+}
+.code-dialog__warn {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 4px;
+  padding: 12px 14px;
+  border-radius: var(--r);
+  background: #fbe9e1;
+  border: 1px solid #f2c7b3;
+  color: #7c2d12;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.code-dialog__warn p {
+  margin: 0;
+}
+.code-dialog__warn svg {
+  flex: none;
+  margin-top: 1px;
+  color: var(--accent);
+}
+.code-dialog__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  margin-top: 4px;
+}
+.code-dialog__actions .btn {
+  text-decoration: none;
+}
+
+/* =====================  Responsif: ponsel kecil & tablet  ===================== */
+.sidenav__list {
+  min-width: 0;
+}
+.sidenav__brand {
+  flex: none;
+}
+@media (max-width: 400px) {
+  .sidenav {
+    padding: 0 8px;
+    gap: 4px;
+  }
+  .sidenav__link {
+    padding: 6px 8px;
+  }
+  /* Ikon saja untuk menu yang tidak aktif agar muat di layar 320px */
+  .sidenav__link:not([aria-current='page']) .sidenav__short {
+    display: none;
+  }
+}
+@media (max-width: 959px) {
+  .page {
+    padding: 20px 16px 40px;
+  }
+  .admin-user {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .admin-user__text {
+    min-width: 0;
+    flex: 1;
+  }
+  .admin-user__text .muted {
+    overflow-wrap: anywhere;
+  }
+  .toolbar__search {
+    max-width: none;
+  }
+  .toolbar select.input {
+    flex: 1 1 140px;
+  }
+  .report-row__meta {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .panel {
+    padding: 16px;
+  }
+  .result__head {
+    flex-wrap: wrap;
+  }
+  .result__ref {
+    font-size: 19px;
+    overflow-wrap: anywhere;
+  }
+  .stat {
+    padding: 12px;
+  }
+  .stat__value {
+    font-size: 28px;
+  }
+  .bars {
+    gap: 3px;
+  }
+  .code-dialog__body {
+    padding: 24px 16px 20px;
+  }
+}
+/* Tablet (mis. iPad potret) dan ponsel landscape: sidebar dipertahankan sebagai bilah atas, isi memakai lebar penuh */
+@media (min-width: 600px) and (max-width: 959px) {
+  .page {
+    max-width: 720px;
+  }
+  .page--wide {
+    max-width: 900px;
+  }
+}
+/* Ponsel landscape / layar pendek: bilah atas lebih tipis, dialog bisa digulir */
+@media (max-height: 500px) {
+  .frame {
+    --nav-h: 48px;
+  }
+  .sidenav__link {
+    min-height: 36px;
+  }
+  .code-dialog__body {
+    gap: 8px;
+    padding: 16px;
+  }
+  .code-dialog__ok {
+    display: none;
+  }
+}

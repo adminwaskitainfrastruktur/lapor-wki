@@ -8,7 +8,9 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/api.php': 'http://127.0.0.1:8081',
+      // changeOrigin: false agar header Host tetap localhost:8080 (server memeriksa asal permintaan)
+      '/api.php': { target: 'http://127.0.0.1:8081', changeOrigin: false },
+      '/admin-api.php': { target: 'http://127.0.0.1:8081', changeOrigin: false },
     },
   },
   build: {
