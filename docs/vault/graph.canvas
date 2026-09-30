@@ -1,0 +1,2929 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Chat React (App + API klien)",
+      "x": 0,
+      "y": 0,
+      "width": 1540,
+      "height": 720,
+      "color": "1"
+    },
+    {
+      "id": "n_web_src_components_composer_answerinput",
+      "type": "file",
+      "file": "AnswerInput().md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer_answerprops",
+      "type": "file",
+      "file": "AnswerProps.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_answers",
+      "type": "file",
+      "file": "Answers.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_app_app",
+      "type": "file",
+      "file": "App().md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_app",
+      "type": "file",
+      "file": "App.tsx.md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist_bubble",
+      "type": "file",
+      "file": "Bubble().md",
+      "x": 1020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_chatmessage",
+      "type": "file",
+      "file": "ChatMessage.md",
+      "x": 1220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer",
+      "type": "file",
+      "file": "Composer.tsx.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer_doneactions",
+      "type": "file",
+      "file": "DoneActions().md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist_donecard",
+      "type": "file",
+      "file": "DoneCard().md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer_filestep",
+      "type": "file",
+      "file": "FileStep().md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer_filesprops",
+      "type": "file",
+      "file": "FilesProps.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_flow",
+      "type": "file",
+      "file": "Flow.md",
+      "x": 1020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_flowsresponse",
+      "type": "file",
+      "file": "FlowsResponse.md",
+      "x": 1220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_header_header",
+      "type": "file",
+      "file": "Header().md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_header",
+      "type": "file",
+      "file": "Header.tsx.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist_listprops",
+      "type": "file",
+      "file": "ListProps.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist_messagelist",
+      "type": "file",
+      "file": "MessageList().md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist",
+      "type": "file",
+      "file": "MessageList.tsx.md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_phase",
+      "type": "file",
+      "file": "Phase.md",
+      "x": 1020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_header_props",
+      "type": "file",
+      "file": "Props.md",
+      "x": 1220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer_quickreplies",
+      "type": "file",
+      "file": "QuickReplies().md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_composer_reviewactions",
+      "type": "file",
+      "file": "ReviewActions().md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist_reviewcard",
+      "type": "file",
+      "file": "ReviewCard().md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_components_messagelist_reviewprops",
+      "type": "file",
+      "file": "ReviewProps.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_step",
+      "type": "file",
+      "file": "Step.md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_steptype",
+      "type": "file",
+      "file": "StepType.md",
+      "x": 1020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_api_submitresult",
+      "type": "file",
+      "file": "SubmitResult.md",
+      "x": 1220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types_uploadrules",
+      "type": "file",
+      "file": "UploadRules.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_api",
+      "type": "file",
+      "file": "api.ts.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_api_fetchflows",
+      "type": "file",
+      "file": "fetchFlows().md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_validate_formatbytes",
+      "type": "file",
+      "file": "formatBytes().md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_validate_formatdateid",
+      "type": "file",
+      "file": "formatDateId().md",
+      "x": 820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_main",
+      "type": "file",
+      "file": "main.tsx.md",
+      "x": 1020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_app_prefersreduced",
+      "type": "file",
+      "file": "prefersReduced().md",
+      "x": 1220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_api_submitreport",
+      "type": "file",
+      "file": "submitReport().md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_types",
+      "type": "file",
+      "file": "types.ts.md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_validate",
+      "type": "file",
+      "file": "validate.ts.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_validate_validateanswer",
+      "type": "file",
+      "file": "validateAnswer().md",
+      "x": 620,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_validate_validatefiles",
+      "type": "file",
+      "file": "validateFiles().md",
+      "x": 820,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_src_app_wait",
+      "type": "file",
+      "file": "wait().md",
+      "x": 1020,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Arsitektur dan alur data",
+      "x": 1620,
+      "y": 0,
+      "width": 1320,
+      "height": 720,
+      "color": "2"
+    },
+    {
+      "id": "n_readme_admin_dashboard",
+      "type": "file",
+      "file": "Admin dashboard (admin.php).md",
+      "x": 1640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_alur_data",
+      "type": "file",
+      "file": "Alur data (data flow).md",
+      "x": 1840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur",
+      "type": "file",
+      "file": "Arsitektur Lapor WKI.md",
+      "x": 2040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_attachment_upload",
+      "type": "file",
+      "file": "Attachment upload (5 files x 10 MB).md",
+      "x": 2240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_chat_phases",
+      "type": "file",
+      "file": "Chat phases loading, choose, asking, files, review, sending, done.md",
+      "x": 2440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_table_attachments",
+      "type": "file",
+      "file": "DB table attachments.md",
+      "x": 2640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_table_rate_limit",
+      "type": "file",
+      "file": "DB table rate_limit.md",
+      "x": 1640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_table_reports",
+      "type": "file",
+      "file": "DB table reports.md",
+      "x": 1840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_deploy_hostinger",
+      "type": "file",
+      "file": "Deploy to Hostinger subdomain.md",
+      "x": 2040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_design_decisions",
+      "type": "file",
+      "file": "Design decisions (optional answers, review summary, random ref code, server-side flows).md",
+      "x": 2240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_email_notification",
+      "type": "file",
+      "file": "Email notification (mailSMTP driver).md",
+      "x": 2440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_lapor_wki_web",
+      "type": "file",
+      "file": "Lapor WKI (chat-style reporting web).md",
+      "x": 2640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_mailer",
+      "type": "file",
+      "file": "Mailer (mail() or SMTP).md",
+      "x": 1640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_mysql_database",
+      "type": "file",
+      "file": "MySQL Hostinger database.md",
+      "x": 1840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_pelaporan_gratifikasi",
+      "type": "file",
+      "file": "Pelaporan Gratifikasi (GRT-XXXXXXXX).md",
+      "x": 2040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_privacy_security",
+      "type": "file",
+      "file": "Privacy and security measures.md",
+      "x": 2240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme",
+      "type": "file",
+      "file": "README Lapor WKI.md",
+      "x": 2440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_reference_code",
+      "type": "file",
+      "file": "Random reference code (WBS-GRT-).md",
+      "x": 2640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_whistleblowing_system",
+      "type": "file",
+      "file": "Whistleblowing System (WBS-XXXXXXXX).md",
+      "x": 1640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_flows_endpoint",
+      "type": "file",
+      "file": "api.phpaction=flows.md",
+      "x": 1840,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_submit_endpoint",
+      "type": "file",
+      "file": "api.phpaction=submit (multipart, honeypot).md",
+      "x": 2040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_config_php",
+      "type": "file",
+      "file": "appconfig.php configuration.md",
+      "x": 2240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_assemble_script",
+      "type": "file",
+      "file": "scriptsassemble.mjs (builds deploy).md",
+      "x": 2440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_smtp_sink",
+      "type": "file",
+      "file": "scriptssmtp_sink.py (local email test).md",
+      "x": 2640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_server_backend",
+      "type": "file",
+      "file": "server PHP backend (api.php, admin.php, app).md",
+      "x": 1640,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_admin_php",
+      "type": "file",
+      "file": "serveradmin.php dashboard.md",
+      "x": 1840,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_api_php",
+      "type": "file",
+      "file": "serverapi.php public endpoint.md",
+      "x": 2040,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_app_bootstrap",
+      "type": "file",
+      "file": "serverapp bootstrap (DB, throttle), flows, Mailer.md",
+      "x": 2240,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_flows_php",
+      "type": "file",
+      "file": "serverappflows.php (single source of questions).md",
+      "x": 2440,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_index_main_tsx",
+      "type": "file",
+      "file": "srcmain.tsx entry script.md",
+      "x": 2640,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_web_frontend",
+      "type": "file",
+      "file": "web React + TypeScript (Vite) frontend.md",
+      "x": 1640,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_index",
+      "type": "file",
+      "file": "webindex.html (SPA entry).md",
+      "x": 1840,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_app_tsx",
+      "type": "file",
+      "file": "websrcApp.tsx chat state machine.md",
+      "x": 2040,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_components",
+      "type": "file",
+      "file": "websrccomponents (Header, MessageList, Composer).md",
+      "x": 2240,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_arsitektur_validate_ts",
+      "type": "file",
+      "file": "websrcvalidate.ts client validation.md",
+      "x": 2440,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Admin dan bootstrap PHP",
+      "x": 3020,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_server_app_mailer_mailer_buildbody",
+      "type": "file",
+      "file": ".buildBody().md",
+      "x": 3040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_mailer_mailer_mimename",
+      "type": "file",
+      "file": ".mimeName().md",
+      "x": 3240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_mailer_mailer_send",
+      "type": "file",
+      "file": ".send()_1.md",
+      "x": 3440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_mailer_mailer_smtp",
+      "type": "file",
+      "file": ".smtp().md",
+      "x": 3640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_mailer_mailer",
+      "type": "file",
+      "file": "Mailer.md",
+      "x": 3840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdo",
+      "type": "file",
+      "file": "PDO.md",
+      "x": 3040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_admin",
+      "type": "file",
+      "file": "admin.php.md",
+      "x": 3240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap",
+      "type": "file",
+      "file": "bootstrap.php.md",
+      "x": 3440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_cfg",
+      "type": "file",
+      "file": "cfg().md",
+      "x": 3640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_admin_csrf",
+      "type": "file",
+      "file": "csrf().md",
+      "x": 3840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_admin_csrf_ok",
+      "type": "file",
+      "file": "csrf_ok().md",
+      "x": 3040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_db",
+      "type": "file",
+      "file": "db().md",
+      "x": 3240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_h",
+      "type": "file",
+      "file": "h().md",
+      "x": 3440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_json_out",
+      "type": "file",
+      "file": "json_out().md",
+      "x": 3640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_mailer",
+      "type": "file",
+      "file": "mailer.php.md",
+      "x": 3840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_migrate",
+      "type": "file",
+      "file": "migrate().md",
+      "x": 3040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_admin_page_end",
+      "type": "file",
+      "file": "page_end().md",
+      "x": 3240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_admin_page_start",
+      "type": "file",
+      "file": "page_start().md",
+      "x": 3440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_random_ref",
+      "type": "file",
+      "file": "random_ref().md",
+      "x": 3640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_rate_limit_hit",
+      "type": "file",
+      "file": "rate_limit_hit().md",
+      "x": 3840,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_security_headers",
+      "type": "file",
+      "file": "security_headers().md",
+      "x": 3040,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_server_app_bootstrap_throttle",
+      "type": "file",
+      "file": "throttle().md",
+      "x": 3240,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Konfigurasi TypeScript",
+      "x": 4200,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_ref_dom",
+      "type": "file",
+      "file": "DOM.md",
+      "x": 4220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_dom_iterable",
+      "type": "file",
+      "file": "DOM.Iterable.md",
+      "x": 4420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_es2020",
+      "type": "file",
+      "file": "ES2020.md",
+      "x": 4620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_allowimportingtsextensions",
+      "type": "file",
+      "file": "allowImportingTsExtensions.md",
+      "x": 4820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions",
+      "type": "file",
+      "file": "compilerOptions.md",
+      "x": 5020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_include",
+      "type": "file",
+      "file": "include.md",
+      "x": 4220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_isolatedmodules",
+      "type": "file",
+      "file": "isolatedModules.md",
+      "x": 4420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_jsx",
+      "type": "file",
+      "file": "jsx.md",
+      "x": 4620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_lib",
+      "type": "file",
+      "file": "lib.md",
+      "x": 4820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_module",
+      "type": "file",
+      "file": "module.md",
+      "x": 5020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_moduleresolution",
+      "type": "file",
+      "file": "moduleResolution.md",
+      "x": 4220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_noemit",
+      "type": "file",
+      "file": "noEmit.md",
+      "x": 4420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "type": "file",
+      "file": "noFallthroughCasesInSwitch.md",
+      "x": 4620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_nounusedlocals",
+      "type": "file",
+      "file": "noUnusedLocals.md",
+      "x": 4820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_nounusedparameters",
+      "type": "file",
+      "file": "noUnusedParameters.md",
+      "x": 5020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_resolvejsonmodule",
+      "type": "file",
+      "file": "resolveJsonModule.md",
+      "x": 4220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_skiplibcheck",
+      "type": "file",
+      "file": "skipLibCheck.md",
+      "x": 4420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_src",
+      "type": "file",
+      "file": "src.md",
+      "x": 4620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_strict",
+      "type": "file",
+      "file": "strict.md",
+      "x": 4820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_target",
+      "type": "file",
+      "file": "target.md",
+      "x": 5020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig",
+      "type": "file",
+      "file": "tsconfig.json.md",
+      "x": 4220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_tsconfig_compileroptions_usedefineforclassfields",
+      "type": "file",
+      "file": "useDefineForClassFields.md",
+      "x": 4420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Dependensi runtime",
+      "x": 0,
+      "y": 800,
+      "width": 1100,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_phosphor_icons_react",
+      "type": "file",
+      "file": "@phosphor-iconsreact_1.md",
+      "x": 20,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_dependencies_phosphor_icons_react",
+      "type": "file",
+      "file": "@phosphor-iconsreact.md",
+      "x": 220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_scripts_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 620,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 820,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 20,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_scripts_preview",
+      "type": "file",
+      "file": "preview.md",
+      "x": 420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 620,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_react",
+      "type": "file",
+      "file": "react_1.md",
+      "x": 820,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_dependencies_react",
+      "type": "file",
+      "file": "react.md",
+      "x": 20,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_react_dom",
+      "type": "file",
+      "file": "react-dom_1.md",
+      "x": 220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_dependencies_react_dom",
+      "type": "file",
+      "file": "react-dom.md",
+      "x": 420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 620,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_type",
+      "type": "file",
+      "file": "type.md",
+      "x": 820,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_scripts_typecheck",
+      "type": "file",
+      "file": "typecheck.md",
+      "x": 20,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 220,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Dependensi dev",
+      "x": 1620,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_types_react",
+      "type": "file",
+      "file": "@typesreact_1.md",
+      "x": 1640,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_devdependencies_types_react",
+      "type": "file",
+      "file": "@typesreact.md",
+      "x": 1840,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom_1.md",
+      "x": 2040,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_devdependencies_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom.md",
+      "x": 2240,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vitejs_plugin_react",
+      "type": "file",
+      "file": "@vitejsplugin-react_1.md",
+      "x": 1640,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_devdependencies_vitejs_plugin_react",
+      "type": "file",
+      "file": "@vitejsplugin-react.md",
+      "x": 1840,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 2040,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_typescript",
+      "type": "file",
+      "file": "typescript_1.md",
+      "x": 2240,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_devdependencies_typescript",
+      "type": "file",
+      "file": "typescript.md",
+      "x": 1640,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vite",
+      "type": "file",
+      "file": "vite_1.md",
+      "x": 1840,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_package_devdependencies_vite",
+      "type": "file",
+      "file": "vite.md",
+      "x": 2040,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Design system",
+      "x": 3020,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_accessibility",
+      "type": "file",
+      "file": "Accessibility guidelines.md",
+      "x": 3040,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master",
+      "type": "file",
+      "file": "Design System Lapor WKI (Master).md",
+      "x": 3240,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_index_google_fonts",
+      "type": "file",
+      "file": "Google Fonts (Lexend, Source Sans 3).md",
+      "x": 3440,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_chat_components",
+      "type": "file",
+      "file": "Key chat components (bubbles, adaptive composer, progress, review).md",
+      "x": 3640,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_light_first_style",
+      "type": "file",
+      "file": "Light-first style with paired dark mode.md",
+      "x": 3040,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_motion",
+      "type": "file",
+      "file": "Motion rules (reduced motion).md",
+      "x": 3240,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_phosphor_icons",
+      "type": "file",
+      "file": "Phosphor icons.md",
+      "x": 3440,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_color_tokens",
+      "type": "file",
+      "file": "Semantic color tokens (lightdark).md",
+      "x": 3640,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_spacing_shape",
+      "type": "file",
+      "file": "Spacing and shape scale.md",
+      "x": 3040,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_system_lapor_wki_master_typography",
+      "type": "file",
+      "file": "Typography (Lexend + Source Sans 3).md",
+      "x": 3240,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Skrip susun deploy",
+      "x": 4200,
+      "y": 800,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_scripts_assemble",
+      "type": "file",
+      "file": "assemble.mjs.md",
+      "x": 4220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_files",
+      "type": "file",
+      "file": "files.md",
+      "x": 4420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_keep",
+      "type": "file",
+      "file": "keep.md",
+      "x": 4620,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_out",
+      "type": "file",
+      "file": "out.md",
+      "x": 4220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_root",
+      "type": "file",
+      "file": "root.md",
+      "x": 4420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_saved",
+      "type": "file",
+      "file": "saved.md",
+      "x": 4620,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_server",
+      "type": "file",
+      "file": "server.md",
+      "x": 4220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_tmp",
+      "type": "file",
+      "file": "tmp.md",
+      "x": 4420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_assemble_web",
+      "type": "file",
+      "file": "web.md",
+      "x": 4620,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "SMTP penampung uji",
+      "x": 0,
+      "y": 1400,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_scripts_smtp_sink_h_handle",
+      "type": "file",
+      "file": ".handle().md",
+      "x": 20,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_smtp_sink_h_send",
+      "type": "file",
+      "file": ".send().md",
+      "x": 220,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_smtp_sink_h",
+      "type": "file",
+      "file": "H.md",
+      "x": 420,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_smtp_sink_s",
+      "type": "file",
+      "file": "S.md",
+      "x": 20,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_smtp_sink_rationale_1",
+      "type": "file",
+      "file": "SMTP penampung untuk uji lokal menyimpan setiap email yang diterima ke folder t.md",
+      "x": 220,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_smtp_sink",
+      "type": "file",
+      "file": "smtp_sink.py.md",
+      "x": 420,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "API kirim laporan",
+      "x": 1620,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_server_api",
+      "type": "file",
+      "file": "api.php.md",
+      "x": 1640,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Config server",
+      "x": 3020,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_server_app_config_sample",
+      "type": "file",
+      "file": "config.sample.php.md",
+      "x": 3040,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Definisi pertanyaan (flows)",
+      "x": 4200,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_server_app_flows",
+      "type": "file",
+      "file": "flows.php.md",
+      "x": 4220,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Konfigurasi Vite",
+      "x": 0,
+      "y": 1880,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_web_vite_config",
+      "type": "file",
+      "file": "vite.config.ts.md",
+      "x": 20,
+      "y": 1960,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_scripts_assemble_scripts_assemble_files",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_files",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_keep",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_keep",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_out",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_out",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_root",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_root",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_saved",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_saved",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_server",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_server",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_tmp",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_tmp",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_assemble_scripts_assemble_web",
+      "fromNode": "n_scripts_assemble",
+      "toNode": "n_scripts_assemble_web",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_smtp_sink_scripts_smtp_sink_h",
+      "fromNode": "n_scripts_smtp_sink",
+      "toNode": "n_scripts_smtp_sink_h",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_smtp_sink_scripts_smtp_sink_s",
+      "fromNode": "n_scripts_smtp_sink",
+      "toNode": "n_scripts_smtp_sink_s",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_smtp_sink_scripts_smtp_sink_rationale_1",
+      "fromNode": "n_scripts_smtp_sink",
+      "toNode": "n_scripts_smtp_sink_rationale_1",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_smtp_sink_h_scripts_smtp_sink_h_handle",
+      "fromNode": "n_scripts_smtp_sink_h",
+      "toNode": "n_scripts_smtp_sink_h_handle",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_smtp_sink_h_scripts_smtp_sink_h_send",
+      "fromNode": "n_scripts_smtp_sink_h",
+      "toNode": "n_scripts_smtp_sink_h_send",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_smtp_sink_h_send_scripts_smtp_sink_h_handle",
+      "fromNode": "n_scripts_smtp_sink_h_send",
+      "toNode": "n_scripts_smtp_sink_h_handle",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_server_admin_server_admin_csrf",
+      "fromNode": "n_server_admin",
+      "toNode": "n_server_admin_csrf",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_admin_server_admin_csrf_ok",
+      "fromNode": "n_server_admin",
+      "toNode": "n_server_admin_csrf_ok",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_admin_server_admin_page_end",
+      "fromNode": "n_server_admin",
+      "toNode": "n_server_admin_page_end",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_admin_server_admin_page_start",
+      "fromNode": "n_server_admin",
+      "toNode": "n_server_admin_page_start",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_admin_page_start_server_app_bootstrap_h",
+      "fromNode": "n_server_admin_page_start",
+      "toNode": "n_server_app_bootstrap_h",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_cfg",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_cfg",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_db",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_db",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_h",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_h",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_json_out",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_json_out",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_migrate",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_migrate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_random_ref",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_random_ref",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_rate_limit_hit",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_rate_limit_hit",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_security_headers",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_security_headers",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_server_app_bootstrap_throttle",
+      "fromNode": "n_server_app_bootstrap",
+      "toNode": "n_server_app_bootstrap_throttle",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_cfg_server_app_bootstrap_db",
+      "fromNode": "n_server_app_bootstrap_cfg",
+      "toNode": "n_server_app_bootstrap_db",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_cfg_server_app_bootstrap_rate_limit_hit",
+      "fromNode": "n_server_app_bootstrap_cfg",
+      "toNode": "n_server_app_bootstrap_rate_limit_hit",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_cfg_server_app_bootstrap_throttle",
+      "fromNode": "n_server_app_bootstrap_cfg",
+      "toNode": "n_server_app_bootstrap_throttle",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_cfg_server_app_mailer_mailer_send",
+      "fromNode": "n_server_app_bootstrap_cfg",
+      "toNode": "n_server_app_mailer_mailer_send",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_db_pdo",
+      "fromNode": "n_server_app_bootstrap_db",
+      "toNode": "n_pdo",
+      "label": "references_constant [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_db_server_app_bootstrap_migrate",
+      "fromNode": "n_server_app_bootstrap_db",
+      "toNode": "n_server_app_bootstrap_migrate",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_db_server_app_bootstrap_throttle",
+      "fromNode": "n_server_app_bootstrap_db",
+      "toNode": "n_server_app_bootstrap_throttle",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_pdo_server_app_bootstrap_migrate",
+      "fromNode": "n_pdo",
+      "toNode": "n_server_app_bootstrap_migrate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_bootstrap_throttle_server_app_bootstrap_rate_limit_hit",
+      "fromNode": "n_server_app_bootstrap_throttle",
+      "toNode": "n_server_app_bootstrap_rate_limit_hit",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_mailer_server_app_mailer_mailer",
+      "fromNode": "n_server_app_mailer",
+      "toNode": "n_server_app_mailer_mailer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_mailer_mailer_server_app_mailer_mailer_buildbody",
+      "fromNode": "n_server_app_mailer_mailer",
+      "toNode": "n_server_app_mailer_mailer_buildbody",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_mailer_mailer_server_app_mailer_mailer_mimename",
+      "fromNode": "n_server_app_mailer_mailer",
+      "toNode": "n_server_app_mailer_mailer_mimename",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_mailer_mailer_server_app_mailer_mailer_send",
+      "fromNode": "n_server_app_mailer_mailer",
+      "toNode": "n_server_app_mailer_mailer_send",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_server_app_mailer_mailer_server_app_mailer_mailer_smtp",
+      "fromNode": "n_server_app_mailer_mailer",
+      "toNode": "n_server_app_mailer_mailer_smtp",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_dependencies",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_dependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_devdependencies",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_devdependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_name",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_private",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_private",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_scripts",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_type",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_type",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_web_package_version",
+      "fromNode": "n_web_package",
+      "toNode": "n_web_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_scripts_web_package_scripts_build",
+      "fromNode": "n_web_package_scripts",
+      "toNode": "n_web_package_scripts_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_scripts_web_package_scripts_dev",
+      "fromNode": "n_web_package_scripts",
+      "toNode": "n_web_package_scripts_dev",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_scripts_web_package_scripts_preview",
+      "fromNode": "n_web_package_scripts",
+      "toNode": "n_web_package_scripts_preview",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_scripts_web_package_scripts_typecheck",
+      "fromNode": "n_web_package_scripts",
+      "toNode": "n_web_package_scripts_typecheck",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_dependencies_web_package_dependencies_phosphor_icons_react",
+      "fromNode": "n_web_package_dependencies",
+      "toNode": "n_web_package_dependencies_phosphor_icons_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_dependencies_web_package_dependencies_react",
+      "fromNode": "n_web_package_dependencies",
+      "toNode": "n_web_package_dependencies_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_dependencies_web_package_dependencies_react_dom",
+      "fromNode": "n_web_package_dependencies",
+      "toNode": "n_web_package_dependencies_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_dependencies_phosphor_icons_react_phosphor_icons_react",
+      "fromNode": "n_web_package_dependencies_phosphor_icons_react",
+      "toNode": "n_phosphor_icons_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_dependencies_react_react",
+      "fromNode": "n_web_package_dependencies_react",
+      "toNode": "n_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_dependencies_react_dom_react_dom",
+      "fromNode": "n_web_package_dependencies_react_dom",
+      "toNode": "n_react_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_web_package_devdependencies_types_react",
+      "fromNode": "n_web_package_devdependencies",
+      "toNode": "n_web_package_devdependencies_types_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_web_package_devdependencies_types_react_dom",
+      "fromNode": "n_web_package_devdependencies",
+      "toNode": "n_web_package_devdependencies_types_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_web_package_devdependencies_typescript",
+      "fromNode": "n_web_package_devdependencies",
+      "toNode": "n_web_package_devdependencies_typescript",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_web_package_devdependencies_vite",
+      "fromNode": "n_web_package_devdependencies",
+      "toNode": "n_web_package_devdependencies_vite",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_web_package_devdependencies_vitejs_plugin_react",
+      "fromNode": "n_web_package_devdependencies",
+      "toNode": "n_web_package_devdependencies_vitejs_plugin_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_types_react_types_react",
+      "fromNode": "n_web_package_devdependencies_types_react",
+      "toNode": "n_types_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_types_react_dom_types_react_dom",
+      "fromNode": "n_web_package_devdependencies_types_react_dom",
+      "toNode": "n_types_react_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_vitejs_plugin_react_vitejs_plugin_react",
+      "fromNode": "n_web_package_devdependencies_vitejs_plugin_react",
+      "toNode": "n_vitejs_plugin_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_typescript_typescript",
+      "fromNode": "n_web_package_devdependencies_typescript",
+      "toNode": "n_typescript",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_package_devdependencies_vite_vite",
+      "fromNode": "n_web_package_devdependencies_vite",
+      "toNode": "n_vite",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_api",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_api",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_api_fetchflows",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_api_fetchflows",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_api_submitreport",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_api_submitreport",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_app_app",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_app_app",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_app_prefersreduced",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_app_prefersreduced",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_app_wait",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_app_wait",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_composer",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_composer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_composer_answerinput",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_composer_answerinput",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_composer_doneactions",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_composer_doneactions",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_composer_filestep",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_composer_filestep",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_composer_quickreplies",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_composer_quickreplies",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_composer_reviewactions",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_composer_reviewactions",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_header",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_header",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_header_header",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_header_header",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_messagelist",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_messagelist",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_messagelist_donecard",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_messagelist_donecard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_messagelist_messagelist",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_messagelist_messagelist",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_components_messagelist_reviewcard",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_components_messagelist_reviewcard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_types",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_types",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_types_answers",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_types_answers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_types_chatmessage",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_types_chatmessage",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_types_flowsresponse",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_types_flowsresponse",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_types_phase",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_types_phase",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_validate",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_validate",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_validate_formatdateid",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_validate_formatdateid",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_validate_validateanswer",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_validate_validateanswer",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_web_src_main",
+      "fromNode": "n_web_src_app",
+      "toNode": "n_web_src_main",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_prefersreduced_web_src_app_app",
+      "fromNode": "n_web_src_app_prefersreduced",
+      "toNode": "n_web_src_app_app",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_wait_web_src_app_app",
+      "fromNode": "n_web_src_app_wait",
+      "toNode": "n_web_src_app_app",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_app_web_src_api_fetchflows",
+      "fromNode": "n_web_src_app_app",
+      "toNode": "n_web_src_api_fetchflows",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_app_web_src_api_submitreport",
+      "fromNode": "n_web_src_app_app",
+      "toNode": "n_web_src_api_submitreport",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_app_web_src_validate_formatdateid",
+      "fromNode": "n_web_src_app_app",
+      "toNode": "n_web_src_validate_formatdateid",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_app_web_src_validate_validateanswer",
+      "fromNode": "n_web_src_app_app",
+      "toNode": "n_web_src_validate_validateanswer",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_app_app_web_src_main",
+      "fromNode": "n_web_src_app_app",
+      "toNode": "n_web_src_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_api_web_src_api_fetchflows",
+      "fromNode": "n_web_src_api",
+      "toNode": "n_web_src_api_fetchflows",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_api_web_src_api_submitreport",
+      "fromNode": "n_web_src_api",
+      "toNode": "n_web_src_api_submitreport",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_api_web_src_api_submitresult",
+      "fromNode": "n_web_src_api",
+      "toNode": "n_web_src_api_submitresult",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_api_web_src_types",
+      "fromNode": "n_web_src_api",
+      "toNode": "n_web_src_types",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_api_web_src_types_answers",
+      "fromNode": "n_web_src_api",
+      "toNode": "n_web_src_types_answers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_api_web_src_types_flowsresponse",
+      "fromNode": "n_web_src_api",
+      "toNode": "n_web_src_types_flowsresponse",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_answerinput",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_answerinput",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_answerprops",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_answerprops",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_doneactions",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_doneactions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_filesprops",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_filesprops",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_filestep",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_filestep",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_quickreplies",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_quickreplies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_components_composer_reviewactions",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_components_composer_reviewactions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_types",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_types",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_types_flow",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_types_flow",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_types_step",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_types_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_types_uploadrules",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_types_uploadrules",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_validate",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_validate",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_validate_formatbytes",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_validate_formatbytes",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_web_src_validate_validatefiles",
+      "fromNode": "n_web_src_components_composer",
+      "toNode": "n_web_src_validate_validatefiles",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_answerprops_web_src_types_step",
+      "fromNode": "n_web_src_components_composer_answerprops",
+      "toNode": "n_web_src_types_step",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_filestep_web_src_validate_formatbytes",
+      "fromNode": "n_web_src_components_composer_filestep",
+      "toNode": "n_web_src_validate_formatbytes",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_composer_filestep_web_src_validate_validatefiles",
+      "fromNode": "n_web_src_components_composer_filestep",
+      "toNode": "n_web_src_validate_validatefiles",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_header_web_src_components_header_header",
+      "fromNode": "n_web_src_components_header",
+      "toNode": "n_web_src_components_header_header",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_header_web_src_components_header_props",
+      "fromNode": "n_web_src_components_header",
+      "toNode": "n_web_src_components_header_props",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_components_messagelist_bubble",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_components_messagelist_bubble",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_components_messagelist_donecard",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_components_messagelist_donecard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_components_messagelist_listprops",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_components_messagelist_listprops",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_components_messagelist_messagelist",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_components_messagelist_messagelist",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_components_messagelist_reviewcard",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_components_messagelist_reviewcard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_components_messagelist_reviewprops",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_components_messagelist_reviewprops",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_types",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_types",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_types_answers",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_types_answers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_types_chatmessage",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_types_chatmessage",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_types_flow",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_types_flow",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_validate",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_validate",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_validate_formatbytes",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_validate_formatbytes",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_web_src_validate_formatdateid",
+      "fromNode": "n_web_src_components_messagelist",
+      "toNode": "n_web_src_validate_formatdateid",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_listprops_web_src_types_chatmessage",
+      "fromNode": "n_web_src_components_messagelist_listprops",
+      "toNode": "n_web_src_types_chatmessage",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_reviewcard_web_src_validate_formatbytes",
+      "fromNode": "n_web_src_components_messagelist_reviewcard",
+      "toNode": "n_web_src_validate_formatbytes",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_components_messagelist_reviewcard_web_src_validate_formatdateid",
+      "fromNode": "n_web_src_components_messagelist_reviewcard",
+      "toNode": "n_web_src_validate_formatdateid",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_answers",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_answers",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_chatmessage",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_chatmessage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_flow",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_flow",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_flowsresponse",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_flowsresponse",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_phase",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_phase",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_step",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_step",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_steptype",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_steptype",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_types_uploadrules",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_types_uploadrules",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_web_src_validate",
+      "fromNode": "n_web_src_types",
+      "toNode": "n_web_src_validate",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_step_web_src_validate",
+      "fromNode": "n_web_src_types_step",
+      "toNode": "n_web_src_validate",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_types_uploadrules_web_src_validate",
+      "fromNode": "n_web_src_types_uploadrules",
+      "toNode": "n_web_src_validate",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_validate_web_src_validate_formatbytes",
+      "fromNode": "n_web_src_validate",
+      "toNode": "n_web_src_validate_formatbytes",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_validate_web_src_validate_formatdateid",
+      "fromNode": "n_web_src_validate",
+      "toNode": "n_web_src_validate_formatdateid",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_validate_web_src_validate_validateanswer",
+      "fromNode": "n_web_src_validate",
+      "toNode": "n_web_src_validate_validateanswer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_src_validate_web_src_validate_validatefiles",
+      "fromNode": "n_web_src_validate",
+      "toNode": "n_web_src_validate_validatefiles",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_web_tsconfig_compileroptions",
+      "fromNode": "n_web_tsconfig",
+      "toNode": "n_web_tsconfig_compileroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_web_tsconfig_include",
+      "fromNode": "n_web_tsconfig",
+      "toNode": "n_web_tsconfig_include",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_allowimportingtsextensions",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_allowimportingtsextensions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_isolatedmodules",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_isolatedmodules",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_jsx",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_jsx",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_lib",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_lib",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_module",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_module",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_moduleresolution",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_moduleresolution",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_noemit",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_noemit",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_nounusedlocals",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_nounusedlocals",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_nounusedparameters",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_nounusedparameters",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_resolvejsonmodule",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_resolvejsonmodule",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_skiplibcheck",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_skiplibcheck",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_strict",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_strict",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_target",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_target",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_web_tsconfig_compileroptions_usedefineforclassfields",
+      "fromNode": "n_web_tsconfig_compileroptions",
+      "toNode": "n_web_tsconfig_compileroptions_usedefineforclassfields",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_lib_ref_dom",
+      "fromNode": "n_web_tsconfig_compileroptions_lib",
+      "toNode": "n_ref_dom",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_lib_ref_dom_iterable",
+      "fromNode": "n_web_tsconfig_compileroptions_lib",
+      "toNode": "n_ref_dom_iterable",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_compileroptions_lib_ref_es2020",
+      "fromNode": "n_web_tsconfig_compileroptions_lib",
+      "toNode": "n_ref_es2020",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_web_tsconfig_include_ref_src",
+      "fromNode": "n_web_tsconfig_include",
+      "toNode": "n_ref_src",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_design_system_lapor_wki_master",
+      "fromNode": "n_readme",
+      "toNode": "n_design_system_lapor_wki_master",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_docs_arsitektur",
+      "fromNode": "n_readme",
+      "toNode": "n_docs_arsitektur",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_readme_assemble_script",
+      "fromNode": "n_readme",
+      "toNode": "n_readme_assemble_script",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_readme_lapor_wki_web",
+      "fromNode": "n_readme",
+      "toNode": "n_readme_lapor_wki_web",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_readme_smtp_sink",
+      "fromNode": "n_readme",
+      "toNode": "n_readme_smtp_sink",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_design_system_lapor_wki_master",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_design_system_lapor_wki_master",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_docs_arsitektur_alur_data",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_docs_arsitektur_alur_data",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_readme_attachment_upload",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_readme_attachment_upload",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_readme_pelaporan_gratifikasi",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_readme_pelaporan_gratifikasi",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_readme_server_backend",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_readme_server_backend",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_readme_web_frontend",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_readme_web_frontend",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_readme_whistleblowing_system",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_readme_whistleblowing_system",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_lapor_wki_web_readme_privacy_security",
+      "fromNode": "n_readme_lapor_wki_web",
+      "toNode": "n_readme_privacy_security",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_whistleblowing_system_docs_arsitektur_reference_code",
+      "fromNode": "n_readme_whistleblowing_system",
+      "toNode": "n_docs_arsitektur_reference_code",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_pelaporan_gratifikasi_docs_arsitektur_reference_code",
+      "fromNode": "n_readme_pelaporan_gratifikasi",
+      "toNode": "n_docs_arsitektur_reference_code",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_web_frontend_readme_flows_php",
+      "fromNode": "n_readme_web_frontend",
+      "toNode": "n_readme_flows_php",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_web_frontend_web_index",
+      "fromNode": "n_readme_web_frontend",
+      "toNode": "n_web_index",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_server_backend_readme_admin_dashboard",
+      "fromNode": "n_readme_server_backend",
+      "toNode": "n_readme_admin_dashboard",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_server_backend_readme_config_php",
+      "fromNode": "n_readme_server_backend",
+      "toNode": "n_readme_config_php",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_server_backend_readme_email_notification",
+      "fromNode": "n_readme_server_backend",
+      "toNode": "n_readme_email_notification",
+      "label": "references [EXTRACTED]"
+    }
+  ]
+}

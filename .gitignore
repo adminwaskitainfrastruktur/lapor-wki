@@ -1,0 +1,12 @@
+node_modules/
+web/dist/
+deploy/
+tmp-mail/
+tmp-test/
+*.log
+.deploy-keep/
+server/app/config.php
+server/storage/uploads/*
+!server/storage/uploads/.gitkeep
+graphify-out/cache/
+report-deploy.zip

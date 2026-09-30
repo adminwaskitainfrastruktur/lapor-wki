@@ -1,0 +1,117 @@
+{
+  "scripts/assemble.mjs": {
+    "mtime": 1790743398.4539006,
+    "ast_hash": "ac9054a815f532dcd728f84bfeafc1eb",
+    "semantic_hash": "ac9054a815f532dcd728f84bfeafc1eb"
+  },
+  "scripts/smtp_sink.py": {
+    "mtime": 1790743403.4994633,
+    "ast_hash": "dc07230ce761203307ad518e308367f0",
+    "semantic_hash": "dc07230ce761203307ad518e308367f0"
+  },
+  "server/admin.php": {
+    "mtime": 1790743761.8989868,
+    "ast_hash": "8f23f2e6cb495543ff9a2089253f4a6d",
+    "semantic_hash": "8f23f2e6cb495543ff9a2089253f4a6d"
+  },
+  "server/api.php": {
+    "mtime": 1790743616.1003256,
+    "ast_hash": "94f0abbcd6635366c61e59015b87c176",
+    "semantic_hash": "94f0abbcd6635366c61e59015b87c176"
+  },
+  "server/app/bootstrap.php": {
+    "mtime": 1790743761.8742266,
+    "ast_hash": "98595bf50a35c83547c8a4b8f52eba29",
+    "semantic_hash": "98595bf50a35c83547c8a4b8f52eba29"
+  },
+  "server/app/config.sample.php": {
+    "mtime": 1790743681.6042142,
+    "ast_hash": "1dc050758d9d4bd40dba9206d79e9107",
+    "semantic_hash": "1dc050758d9d4bd40dba9206d79e9107"
+  },
+  "server/app/flows.php": {
+    "mtime": 1790742848.4839995,
+    "ast_hash": "8a943cd01b9ec3fe9b6b13612351db6e",
+    "semantic_hash": "8a943cd01b9ec3fe9b6b13612351db6e"
+  },
+  "server/app/mailer.php": {
+    "mtime": 1790742848.486998,
+    "ast_hash": "978a767b9b55dc946baf811f022fd90d",
+    "semantic_hash": "978a767b9b55dc946baf811f022fd90d"
+  },
+  "web/package.json": {
+    "mtime": 1790743199.4532478,
+    "ast_hash": "cf8a20556d4407639c9b41f85ddba9c1",
+    "semantic_hash": "cf8a20556d4407639c9b41f85ddba9c1"
+  },
+  "web/src/App.tsx": {
+    "mtime": 1790743629.0890026,
+    "ast_hash": "cf1aa614f4f33b8868c511cf3fca2dac",
+    "semantic_hash": "cf1aa614f4f33b8868c511cf3fca2dac"
+  },
+  "web/src/api.ts": {
+    "mtime": 1790743084.263792,
+    "ast_hash": "7c092eb52f2e91ffa0330ac9489abb1e",
+    "semantic_hash": "7c092eb52f2e91ffa0330ac9489abb1e"
+  },
+  "web/src/components/Composer.tsx": {
+    "mtime": 1790743629.0890026,
+    "ast_hash": "aa3048c4e58cede8670b8a044101bac4",
+    "semantic_hash": "aa3048c4e58cede8670b8a044101bac4"
+  },
+  "web/src/components/Header.tsx": {
+    "mtime": 1790743106.6582737,
+    "ast_hash": "54000dd3f74a538d649ad14d1c4f5ad0",
+    "semantic_hash": "54000dd3f74a538d649ad14d1c4f5ad0"
+  },
+  "web/src/components/MessageList.tsx": {
+    "mtime": 1790743494.210955,
+    "ast_hash": "929189408a5ab7dad85ab5089c3ab1f3",
+    "semantic_hash": "929189408a5ab7dad85ab5089c3ab1f3"
+  },
+  "web/src/main.tsx": {
+    "mtime": 1790743161.61284,
+    "ast_hash": "f0230af6ee7450d82be76d121f1e65da",
+    "semantic_hash": "f0230af6ee7450d82be76d121f1e65da"
+  },
+  "web/src/types.ts": {
+    "mtime": 1790743081.2496996,
+    "ast_hash": "4926480b79251c4746a0cfa10259e393",
+    "semantic_hash": "4926480b79251c4746a0cfa10259e393"
+  },
+  "web/src/validate.ts": {
+    "mtime": 1790743090.3807528,
+    "ast_hash": "8724cab45cb4158647ff2d719a3de078",
+    "semantic_hash": "8724cab45cb4158647ff2d719a3de078"
+  },
+  "web/tsconfig.json": {
+    "mtime": 1790743062.2787788,
+    "ast_hash": "6b0318b9b75bbb74c7893a0e5ebfd76a",
+    "semantic_hash": "6b0318b9b75bbb74c7893a0e5ebfd76a"
+  },
+  "web/vite.config.ts": {
+    "mtime": 1790743063.6957192,
+    "ast_hash": "dce1e72c3e8646fe35c734f6e67f6ac9",
+    "semantic_hash": "dce1e72c3e8646fe35c734f6e67f6ac9"
+  },
+  "README.md": {
+    "mtime": 1790743791.1074357,
+    "ast_hash": "632b9c5f346fcae98a1db4af91d9135a",
+    "semantic_hash": "632b9c5f346fcae98a1db4af91d9135a"
+  },
+  "design-system/lapor-wki/MASTER.md": {
+    "mtime": 1790742978.9784732,
+    "ast_hash": "730c86f4d29350e3033ce6f435a9158c",
+    "semantic_hash": "730c86f4d29350e3033ce6f435a9158c"
+  },
+  "docs/ARSITEKTUR.md": {
+    "mtime": 1790743798.3405323,
+    "ast_hash": "db0daf99d6c02a1cbe69c64ca38f5ec0",
+    "semantic_hash": "db0daf99d6c02a1cbe69c64ca38f5ec0"
+  },
+  "web/index.html": {
+    "mtime": 1790743065.463815,
+    "ast_hash": "ce66eac53470b972a3598d19c4253a48",
+    "semantic_hash": "ce66eac53470b972a3598d19c4253a48"
+  }
+}
